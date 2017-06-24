@@ -253,8 +253,8 @@ header img {
 
 .social-top {
   position: absolute;
-  right: 60px;
-  top: 20px;
+  right: 10%;
+  top: 2%;
 }
 
 .social [class*="fa fa-"] {
@@ -376,7 +376,46 @@ section#slider {
   background-color: #ffffff;
   opacity: 0.82;
   line-height: 28px;
-  padding: 20px;
+  padding: 2% 3% 2% 6%;
+  top:33.3%
+}
+
+@media (min-width:1279px) {
+  #text-box {
+    padding: 2% 3% 2% 8%;
+    top: 48%;
+    left: -19%;
+  }
+}
+
+@media (min-width:1919px) {
+  #text-box {
+    padding: 2% 2% 2% 5%;
+    top: 48%;
+    left: -16%;
+  }
+}
+
+@media (min-width:359px) {
+  #text-box {
+    padding: 2% 3% 2% 3%;
+    top: 16%;
+  }
+
+  #text-box h3 {
+    font-size: 27px !important;
+    text-align: center;
+  }
+
+  #text-box strong {
+    font-size: 17px !important;
+    text-align: justify;
+  }
+  .social-top {
+    position: absolute;
+    right: 33%;
+    top: 5%;
+  }
 }
 
 #text-box h3 {
