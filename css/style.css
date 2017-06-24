@@ -1,0 +1,405 @@
+body {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+body, html {
+  height: 100%;
+}
+
+em {
+  font-style: italic;
+}
+
+.affix {
+     top:0;
+     width: 100%;
+     z-index: 9999 !important;
+ }
+ .navbar {
+     margin-bottom: 0px;
+ }
+
+ .affix ~ .container-fluid {
+    position: relative;
+    top: 50px;
+ }
+
+.row {
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.navbar-nav {
+  margin: 1px 1px;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-default {
+    font-size: 16px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-weight: 300;
+  color: #fff;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+}
+
+.navbar-collapse.in { /*3.0.2 bug workaround*/
+    overflow-y: visible;
+}
+
+.navbar-toggle {
+	outline:0;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+    background-color: #fff;
+}
+
+@media (min-width: 767px) {
+    .navbar-brand {
+        display: none !important;
+    }
+}
+
+.navbar-brand {
+  padding: 7px 15px !important;
+}
+
+.navbar-brand img{
+  width:45%;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #D8BF5B;
+}
+
+#nav {
+  width: 100%;
+  position:static;
+  top:-32px;
+  background-color: #d8bf5b;
+  margin-bottom: 1px;
+}
+
+#nav.affix {
+   position: fixed;
+   top: 0;
+   z-index:10;
+   -webkit-transition: all .6s ease-in-out;
+}
+
+@media (min-width: 767px) {
+  .navbar-nav.nav-justified > li{
+      float:none;
+  }
+}
+
+#wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
+
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+  margin-top:50px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+@media (min-width: 767px) {
+  .navbar-nav.nav-justified > li{
+      float:none;
+  }
+}
+.navbar-nav {
+  margin: 1px 1px;
+}
+
+.scroll-top {
+   position:fixed;
+   bottom:0;
+   right:6%;
+   z-index:100;
+   background: #fff;
+   font-size:24px;
+   border-top-left-radius:3px;
+   border-top-right-radius:3px;
+}
+.scroll-top a:link,
+.scroll-top a:visited,
+.scroll-top a:active,
+.scroll-top a:hover {
+  color:#d8bf5b !important;
+}
+
+footer {
+  background-color: #d8bf5b;
+  padding-bottom: 40px;
+}
+
+footer nav {
+  margin-top: 40px;
+}
+
+.navbar-bottom {
+  border: 0;
+}
+
+header>.container>.row {
+  margin:20px 0;
+}
+
+.header-text {
+  color: #434341;
+  font-weight: 500;
+}
+
+#the-cutting-edge {
+  font-size: 18px;
+  padding: 15px;
+  line-height: 25px;
+}
+
+#brand {
+  color: #000000;
+  display: inline;
+}
+
+header img {
+  float:left;
+  width: 25%;
+}
+
+#anacapa {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+#dental-art-institute {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+#schedule-a-consultation {
+  color: #d8bf5b;
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#phone {
+  font-size: 24px;
+}
+
+#footer-text-container {
+  border-top: 1px solid #fff;
+  padding-top: 5%;
+  color:#fff;
+}
+
+#footer-text-container h2 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+
+#footer-text-container address {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+#footer-text-container strong {
+  font-weight: 500;
+}
+
+@media only screen and (max-device-width: 480px) {
+    #footer {
+        height: auto;
+    }
+}
+
+.social-top {
+  position: absolute;
+  right: 60px;
+  top: 20px;
+}
+
+.social [class*="fa fa-"] {
+  background-color: #d5b05f;
+  border-radius: 40px;
+  color: #fff;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  margin: auto 6px;
+  width: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.social-bottom .social a {
+  background-color: #fff;
+  color: #d5b05f;
+}
+
+.social-bottom{
+  margin-bottom: 20px;
+}
+
+.social-bottom .social a {
+  background-color: #fff;
+  color: #d5b05f;
+}
+
+.social a:hover {
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright{
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.divider {
+  height: 80px;
+}
+
+#intro h2,
+#intro p {
+  font-weight: 300;
+}
+
+#intro h2 {
+  font-size: 33px;
+  line-height: 48px;
+}
+
+#intro p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+#intro em {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.page-header {
+  border-bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  background-color: #ffffff;
+  min-height: 763px;
+  height: auto !important;
+  height: 100%;
+  padding-top:100px;
+}
+
+.bg-1 {
+  background: url('../images/main-slide.png') no-repeat top center fixed;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+section#slider {
+  padding: 0;
+}
+
+#slider-box {
+  background:transparent url('../images/main-slide.png') no-repeat center center;
+  height: 763px;
+  position: relative;
+}
+
+@media (max-width: 979px) {
+  #slider-box {
+    background:transparent url('../images/main-slide.png') no-repeat center center;
+    -webkit-background-size: auto;
+  	-moz-background-size: auto;
+  	-o-background-size: auto;
+  	background-size: auto;
+  }
+}
+
+@media (max-width: 979px) {
+  #slider-box {
+    background:transparent url('../images/main-slide.png') no-repeat 70% center;
+    -webkit-background-size: auto;
+  	-moz-background-size: auto;
+  	-o-background-size: auto;
+  	background-size: auto;
+  }
+}
+
+#text-box {
+  background-color: #ffffff;
+  opacity: 0.82;
+  line-height: 28px;
+  padding: 20px;
+}
+
+#text-box h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#text-box strong {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+#text-box hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #d5b05f;
+  padding: 0;
+}
+
+.gold-divider {
+  margin: 2px 0 2px 0;
+  height: 24px;
+  background-color: #ffffff;
+  background-image: linear-gradient(to right, #ffffff 0%, #d8bf5b 50%, #ffffff 100%);
+}
