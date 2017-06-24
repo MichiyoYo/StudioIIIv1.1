@@ -12,6 +12,14 @@ em {
   font-style: italic;
 }
 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #d5b05f;
+    padding: 0;
+}
+
 .affix {
      top:0;
      width: 100%;
@@ -335,11 +343,15 @@ section {
 }
 
 .bg-1 {
-  background: url('../images/main-slide.png') no-repeat top center fixed;
-  -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  background: url('../images/Intro-background.png') no-repeat;
+  background-size: 123%;
+  background-position-x: 58%;
+}
+
+@media (max-width: 1280px) {
+  .bg-1 {
+    background-position-x: 77%;
+  }
 }
 
 section#slider {
@@ -457,4 +469,47 @@ section#slider {
   height: 24px;
   background-color: #ffffff;
   background-image: linear-gradient(to right, #ffffff 0%, #d8bf5b 50%, #ffffff 100%);
+}
+
+.side-lines {
+  z-index: -1000;
+  top: 45px;
+  position: relative;
+  border-top: 2px solid #eee;
+}
+
+#section1 {
+  height: 40px;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.thumbnail h3 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.thumbnail img {
+  margin-bottom: 30px;
+}
+
+.thumbnail p {
+  margin-top: 40px;
+}
+
+#section3 {
+  border-bottom: solid #d8bf5b 1px;
 }
