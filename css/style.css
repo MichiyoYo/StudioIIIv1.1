@@ -328,10 +328,23 @@ header img {
   text-transform: uppercase;
 }
 
+@media (max-width:360px) {
+  #intro h2 {
+    font-size: 26px;
+  }
+}
+
 .page-header {
   border-bottom: 0;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width:360px) {
+  .page-header {
+    margin-top: 45px;
+    font-size: 26px;
+  }
 }
 
 section {
@@ -357,6 +370,12 @@ section#slider {
   }
 }
 
+@media (max-width: 360px){
+  .bg-1{
+    background: none;
+  }
+}
+
 section#slider {
   padding: 0;
 }
@@ -374,6 +393,12 @@ section#slider {
   	-moz-background-size: auto;
   	-o-background-size: auto;
   	background-size: auto;
+  }
+}
+
+@media (max-width:360px) {
+  #slider-box {
+    background-position-x:68%;
   }
 }
 
@@ -465,6 +490,16 @@ section#slider {
   border: 0;
   border-top: 2px solid #d5b05f;
   padding: 0;
+}
+
+@media (max-width:360px) {
+  #text-box h3 {
+    font-size: 28px;
+  }
+
+  #text-box strong {
+    font-size: 19px;
+  }
 }
 
 .gold-divider {
@@ -587,6 +622,13 @@ section#slider {
 	background-size: cover;
 }
 
+@media (max-width:360px) {
+  .bg-3 {
+    background: url('../images/dr-jivraj-portrait.png') no-repeat fixed;
+    background-position-x: 25%;
+  }
+}
+
 #meet-doc {
   min-height: 996px;
 }
@@ -617,4 +659,58 @@ section#slider {
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
+}
+
+@media (max-width:980px){
+  #doc-block {
+    background-color: #ffffff80;
+    padding: 5%;
+  }
+}
+
+@media (max-width:360px){
+  #doc-block h3 {
+    font-size: 21px;
+  }
+
+  #doc-block h2 {
+    font-size: 41px;
+  }
+}
+
+.bg-4 {
+  background: transparent url(../images/FeaturesBCK1.png) no-repeat;
+  background-size: 139%;
+  background-position: 54% -16%;
+}
+
+#second-features .row {
+  margin-bottom: 60px;
+}
+
+#second-features h3 {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin:3% 0;
+}
+
+#second-features p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@media (max-width:980px){
+  #second-features .text-box {
+    text-align: center;
+  }
+  #second-features .text-box p{
+    text-align: justify;
+  }
+}
+
+.img-center {
+  margin:0 auto;
 }
