@@ -1,0 +1,69 @@
+
+.slide-topdown,
+.slide-rightleft {
+  visibility: hidden;
+}
+
+.slide-td {
+  /*my animation name*/
+  animation: topdown;
+  -webkit-animation-name: topdown;
+  /*my animation duration*/
+  animation-duration: 1s;
+  -webkit-animation-duration:1s;
+  /*status before the animation*/
+  visibility: visible;
+}
+
+@keyframes topdown {
+    from {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes topdown {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+.slide-rl {
+  /*my animation name*/
+  animation: rightleft;
+  -webkit-animation-name: rightleft;
+  /*my animation duration*/
+  animation-duration: 1s;
+  -webkit-animation-duration:1s;
+  /*status before the animation*/
+  visibility: visible;
+}
+
+@keyframes rightleft {
+    from {
+      transform: translateX(70%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+}
+@-webkit-keyframes rightleft {
+    from {
+      -webkit-transform: translateX(70%);
+        opacity: 0;
+    }
+    to {
+      -webkit-transform: translateX(0%);
+      opacity: 1;
+    }
+}

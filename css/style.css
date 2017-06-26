@@ -676,6 +676,10 @@ section#slider {
   #doc-block h2 {
     font-size: 41px;
   }
+
+  #meet-doc{
+    padding:0;
+  }
 }
 
 .bg-4 {
@@ -734,18 +738,6 @@ section#slider {
   padding-top: 8%;
 }
 
-#living-room {
-  animation-delay: 1s;
-}
-
-#staff {
-  animation-delay: 2s;
-}
-
-#facility-box {
-  animation-delay: 3s;
-}
-
 @media (max-width:980px) {
   #facility-box .media-left {
     display: none;
@@ -767,4 +759,8 @@ section#slider {
   -o-background-size: auto;
   background-size: auto;
   min-height: 900px;
+}
+
+#consultation hr {
+  border-top: 2px solid #d8bf5b
 }
