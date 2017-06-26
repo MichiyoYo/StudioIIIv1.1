@@ -714,3 +714,57 @@ section#slider {
 .img-center {
   margin:0 auto;
 }
+
+#facility-box .media-body h3 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+#facility-box .media-body p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+#facility-box .media img {
+  margin-top:-30%;
+}
+
+#facility-box .media {
+  padding-top: 8%;
+}
+
+#living-room {
+  animation-delay: 1s;
+}
+
+#staff {
+  animation-delay: 2s;
+}
+
+#facility-box {
+  animation-delay: 3s;
+}
+
+@media (max-width:980px) {
+  #facility-box .media-left {
+    display: none;
+  }
+}
+
+@media (max-width:360px)
+ {
+   #staff .media-body {
+     background-color: #ffffffb3;
+     padding: 5%;
+     text-align: center;
+   }
+ }
+.bg-5 {
+  background: url('../images/facility-bck-merge.png') no-repeat bottom center;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
+  min-height: 900px;
+}
