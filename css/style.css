@@ -92,10 +92,11 @@ hr {
 
 .navbar-brand {
   padding: 7px 15px !important;
+  width: 83%;
 }
 
 .navbar-brand img{
-  width:45%;
+  width:52%;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
