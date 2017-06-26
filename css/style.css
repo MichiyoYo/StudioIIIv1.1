@@ -236,6 +236,12 @@ header img {
   color:#fff;
 }
 
+@media (max-width:360px) {
+  #footer-text-container {
+    border-top:0;
+  }
+}
+
 #footer-text-container h2 {
   font-size: 14px;
   font-weight: 700;
@@ -839,6 +845,10 @@ section#slider {
 }
 .features-item img {
   transition: box-shadow 0.5s;
+}
+
+#second-features .features-item img {
+  border: 1px solid #d8bf5b;
 }
 
 .features-item img:hover {
