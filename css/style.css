@@ -341,10 +341,34 @@ header img {
   padding: 0;
 }
 
+.page-header>h2:before,
+.page-header>h2:after {
+  content: '';
+  height: 1px;
+  background: #CCC;
+  width: 66px;
+  display: block;
+  position: absolute;
+  height: 2px;
+  top: 103px;
+}
+
+.page-header>h2:before {
+  left: 2.3em;
+}
+.page-header>h2:after {
+  right: 2.3em;
+}
+
+
 @media (max-width:360px) {
   .page-header {
     margin-top: 45px;
     font-size: 26px;
+  }
+  .page-header>h2:before,
+  .page-header>h2:after {
+    display: none;
   }
 }
 
@@ -812,4 +836,11 @@ section#slider {
   #consultation h2 {
     font-size: 34px;
   }
+}
+.features-item img {
+  transition: box-shadow 0.5s;
+}
+
+.features-item img:hover {
+  box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
