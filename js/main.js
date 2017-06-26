@@ -19,12 +19,22 @@ $(document).ready(function (){
     $(".slide-rightleft").each(function(){
       /*get position of the object with class .slide-rightleft*/
       var pos = $(this).offset().top;
-      /*get current vertical position of the scroll ba */
+      /*get current vertical position of the scroll bar */
       var winTop = $(window).scrollTop();
       if (pos < winTop + 600) {
         $(this).addClass("slide-rl");
       }
     });
-  });
 
+    $(".fadeIn").each(function(){
+      /*get position of the object with class .slide-rightleft*/
+      var pos = $(this).offset().top;
+      /*get current vertical position of the scroll bar */
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + 600) {
+        $(this).addClass("fade-in");
+      }
+    });
+
+  });
 });

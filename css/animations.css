@@ -1,6 +1,7 @@
 
 .slide-topdown,
-.slide-rightleft {
+.slide-rightleft,
+.fadeIn {
   visibility: hidden;
 }
 
@@ -15,6 +16,7 @@
   visibility: visible;
 }
 
+/*keyframes tell the start and end status of the animation*/
 @keyframes topdown {
     from {
         opacity: 0;
@@ -66,4 +68,99 @@
       -webkit-transform: translateX(0%);
       opacity: 1;
     }
+}
+
+.fade-in {
+  /*my animation name*/
+  animation: myFadeIn;
+  -webkit-animation-name: myFadeIn;
+
+  /*status before the animation*/
+  visibility: visible;
+  opacity:0;
+  -webkit-animation:myFadeIn ease-in 1;
+  -moz-animation:myFadeIn ease-in 1;
+  animation:myFadeIn ease-in 1;
+
+ /*to keep the animation at opacity 1 when it's done*/
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  /*my animation duration*/
+  -webkit-animation-duration:3s;
+  -moz-animation-duration:3s;
+  animation-duration:3s;
+}
+
+
+@keyframes myFadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+@-webkit-keyframes myFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@-webkit-keyframes myFadeIn {
+  from {
+    opacity:0;
+    }
+  to {
+    opacity:1;
+    }
+  }
+@-moz-keyframes myFadeIn {
+  from {
+    opacity:0;
+    }
+  to {
+    opacity:1;
+    }
+  }
+@keyframes fadeIn {
+  from {
+    opacity:0;
+    }
+  to {
+    opacity:1;
+    }
+  }
+
+.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+
+.two {
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay:1.2s;
+animation-delay: 1.2s;
+}
+
+.three {
+-webkit-animation-delay: 1.6s;
+-moz-animation-delay: 1.6s;
+animation-delay: 1.6s;
+}
+
+.four {
+-webkit-animation-delay: 2.2s;
+-moz-animation-delay: 2.2s;
+animation-delay: 2.2s;
+}
+
+.five {
+-webkit-animation-delay: 2.7s;
+-moz-animation-delay: 2.7s;
+animation-delay:2.7s;
 }
